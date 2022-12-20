@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div id="logo">
+           <h1>DigiFav</h1>
+            </div>
+            
+            <div class="search" id="search">
+                <label class="sr-only" for="input-search">Digimon name</label>
+                <input type="text" id="input-search" placeholder="Digimon name">
+                <button id="button-search"><div id="button-content"><h4>&star;</h4> <span> FAVORITAR</span></div></button>
+            </div>
+                
+        </header>
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Level</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="digiName">
+                        <img src="https://digimon.shadowsmith.com/img/agumon.jpg" alt="">
+                        <a href="https://digitalmonster.fandom.com/pt/wiki/Agumon" target="_blank">
+                            <p>Agumon</p>
+                        </a>
+                    </td>
+                    <td class="level">
+                        <span>Rookie</span>
+                    </td>
+                    <td>
+                        <button class="remove">&times;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="digiName">
+                        <img src="https://digimon.shadowsmith.com/img/koromon.jpg" alt="">
+                        <a href="https://digitalmonster.fandom.com/pt/wiki/Koromon" target="_blank">
+                            <p>Koromon</p>
+                        </a>
+                    </td>
+                    <td class="level">
+                        <span>Rookie</span>
+                    </td>
+                    <td>
+                        <button class="remove">&times;</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
